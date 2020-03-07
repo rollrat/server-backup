@@ -1,0 +1,1 @@
+./certbot --authenticator standalone --installer nginx -d rollrat.com,www.rollrat.com,cc.rollrat.com,api.rollrat.com,static.rollrat.com,mail.rollrat.com --pre-hook "service nginx stop" --post-hook "service nginx start"
